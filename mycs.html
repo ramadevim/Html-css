@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css style </title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style >
+		 
+		#para{
+			color: red;
+			text-align: center;
+		}
+		                                                       
+		.center{
+			color: purple;
+			background-image: url('puppy.jpg');
+			 background-repeat: repeat-x;
+             background-position: all;
+             background-attachment: scroll;
+
+		}
+		
+		h2{
+			 color: green;
+			 border-style: solid;
+             border-width: 2px 10px 4px 20px;
+             margin-left:50px;
+             padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px; 
+            	text-shadow: 3px 2px red;
+		    font-size: x-large;
+		    font-variant: small-caps;
+		}
+
+		
+		#grouping selector
+	
+		h3,h4{       
+		      color: blue;              
+            text-underline-position: inherit;
+            border-style: solid;
+             border-radius: 10px;
+             margin:  50px;
+             outline: dashed purple;
+
+
+		}
+		p{
+			color: purple;
+			text-decoration: underline;
+			text-transform: capitalize;
+			text-indent: 50px;
+			letter-spacing: 3px;
+			line-height: 0.8;
+			direction: rtl;
+			word-spacing: 10px;
+			overflow: scroll;
+
+		}
+		a:hover, a:active {
+        background-color: red;
+        }
+        ul{
+        	list-style-type: upper-roman;
+        	list-style-image: url(''sqpurple.gif'' );
+
+        }
+        table, th, td {
+  		border: 1px solid black;
+  		width: 50%;
+  		padding: 15px;
+  		height: 50%;
+		} 
+		img {
+       float: bottom;
+       opacity: 0.5;
+       filter: alpha(opacity=50);
+		}
+
+
+	.img-container {
+	  float: left;
+	  width: 30%;
+	  padding: 2px;
+	}
+
+	.clearfix::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+	div.background {
+  background: url('Banglore.jpg') repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+  	</style>
+</head>
+<body>
+	<p id="para">
+		Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+	</p>
+	<img src="puppy.jpg" width="20%" height="20%">
+   <h1 class="center" >My name is rama</h1>
+   <i class="glyphicon glyphicon-cloud"></i>
+   <h2>My name is sai</h2>
+   <h3>Hai good morning</h3>
+   <h4>Hai sai good evening</h4>
+   <p>Hello welcome to maxgen</p>
+   <a href="https://www.w3schools.com" target="_blank">This is a link</a>
+   <ul>
+   	<li>coffee</li>
+   	<li>Tea</li>
+   </ul>
+   <table>
+   	<thead>
+   		<th>employee name</th>
+   		<th>position</th>
+   		<th>Company</th>
+   	</thead>
+   	<tr>
+   		<td>Rama</td>
+   		<td>python developer</td>
+   		<td>maxgen technologies</td>
+   	</tr>
+   	<tr>
+   		<td>vaishali</td>
+   		<td>ds</td>
+   		<td>maxgen technologies</td>
+   	</tr>
+   </table>
+<div class="clearfix">
+  <div class="img-container">
+  <img src="puppy.jpg" alt="Italy" style="width:70%">
+  </div>
+  <div class="img-container">
+  <img src="puppy.jpg" alt="Forest" style="width:70%">
+  </div>
+  <div class="img-container">
+  <img src="puppy.jpg" alt="Mountains" style="width:70%">
+  </div>
+</div>
+
+<div class="background">
+  <div class="transbox">
+    <p>This is some text that is placed in the transparent box.</p>
+  </div>
+</div>
+
+</body>
+</html>
